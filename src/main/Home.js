@@ -39,7 +39,11 @@ function Home() {
                 Click next to learn more." delay={100} infinite/>
             </div>
             <div>
-                <Link className="mt-11 text-2xl inline-block border border-b-blue-100 rounded-full py-2 px-4 bg-slate-500 transition-all bg-gradient-to-r from-indigo-500 hover:shadow-black hover:bg-blue-700 text-white ml-2" to="/learning/src/main/Topics.js">Next</Link>
+                <Link className="mt-11 text-2xl inline-block border
+                 border-b-blue-100 rounded-full py-2 px-4 
+                 bg-slate-500 transition-all bg-gradient-to-r from-indigo-500 hover:shadow-black 
+                 hover:bg-blue-700 text-white ml-2" 
+                 to="/learning/src/main/Topics.js">Next</Link>
             </div>       
         </div>
     </div>
