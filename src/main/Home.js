@@ -2,14 +2,16 @@
 import React,{useState,useEffect} from 'react';
 import { Link } from 'react-router-dom';
 
+
 const Typewriter=({text,delay,infinite})=>{
 
+    
     const [currText,setCurrText]=useState("")
     const [currIndex,setCurrIndex]=useState(0)
   
   
     useEffect(()=>{
-        let timeout;
+    
         if(currIndex<text.length){
             const timeout = setTimeout(()=>{
                 setCurrText(prevText=>prevText+text[currIndex])
@@ -34,8 +36,8 @@ function Home() {
     <div className='flex h-screen'>     
         
         <div className='flex flex-col flex-1 justify-center items-center'>
-            <div className='text-7xl justify-center items-center'>
-                <Typewriter className text="Welcome to learning!     
+            <div className='text-7xl justify-center items-center '>
+                <Typewriter className="text-center" text="Welcome to learning!     
                 Click next to learn more." delay={100} infinite/>
             </div>
             <div>
